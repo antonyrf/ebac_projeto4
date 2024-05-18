@@ -1,0 +1,9 @@
+@use '../components/variables';
+
+#contador{
+    background-color: black;
+    border-radius: 1em;
+    color: variables.$textColor;
+    font-family: variables.$fontFamily;
+    padding: 0.5em 3em;
+}

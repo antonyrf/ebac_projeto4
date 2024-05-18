@@ -1,0 +1,65 @@
+@use 'hero';
+@use 'navbar';
+@use 'sobre';
+@use '../styles/components/variables';
+@use '../styles/components/span';
+
+@mixin text($fontSize: 16px) {
+    font-size: $fontSize;
+    color: variables.$textColor;
+    font-family: Roboto, sans-serif;
+}
+
+@mixin textDark($fontSize: 16px) {
+    font-size: $fontSize;
+    color: variables.$textColorDark;
+    font-family: Roboto, sans-serif;
+}
+
+@mixin title($fontSize: 24px) {
+    font-size: $fontSize;
+    color: variables.$textColor;
+    font-family: Roboto, sans-serif;
+    font-weight: 600;
+}
+
+.text--small{
+    @include text(12px);
+}
+
+.text--small-dark{
+    @include textDark(12px);
+}
+
+.text--big{
+    @include text(20px);
+    text-decoration: none
+}
+.text--big-dark{
+    @include textDark(20px);
+}
+
+.title--small{
+    @include title(22px);
+}
+
+.title--big{
+    @include title(32px)
+}
+
+.title--extrabig{
+    @include title(42px)
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.container{
+    max-width: 90%;
+    width: 100%;
+    margin: 0 auto;
+}

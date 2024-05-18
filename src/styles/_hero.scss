@@ -1,0 +1,44 @@
+@use '../styles/components/variables';
+@use '../styles/components/button';
+
+.hero{
+    background-color: bisque;
+    border-radius: 2em;
+    width: 90%;
+    height: 640px;
+    margin: 0 auto;
+    background-image: url(../images/heroimg1.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+
+    &__data{
+        background-color: black;
+        max-width: fit-content;
+        padding: 1em;
+        border-radius: 1em;
+        margin-top: 0.5em;
+    }
+
+    &__title{
+        color: variables.$textColor;
+    }
+
+    &__contador{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1em;
+        background-color: #ffffff;
+        max-width:fit-content;
+        padding: 1em;
+        border-radius: 1em;
+        gap: 1em;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+    }
+}

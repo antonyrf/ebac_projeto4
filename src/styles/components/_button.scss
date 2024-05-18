@@ -1,0 +1,19 @@
+@use '../components/variables';
+
+.ingresso{
+    &__button{
+        margin-top: 1em;
+        background-color: variables.$buttonColorRed;
+        max-width: fit-content;
+        padding: 1em;
+        border-radius: 1em;
+        border: none;
+        color: variables.$textColor;
+        font-size: 20px;
+
+        &:hover{
+            cursor: pointer;
+            background-image: linear-gradient(217deg, variables.$buttonColorBlue, variables.$buttonColorRed);
+        }
+    }
+}

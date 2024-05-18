@@ -7,6 +7,46 @@
     <link rel="stylesheet" href="styles/main.scss">
 </head>
 <body>
-    <h1>olá</h1>
+    <div class="nav-bar">
+        <div class="container">
+            <img class="nav-bar__img" src="../src/images/niverLogo.png" alt="">
+            <ul class="nav-bar__menu">
+                <li class="nav-bar__menu__item">
+                    <a class="text--big" href="#">contato</a>
+                </li>
+                <li class="nav-bar__menu__item">
+                    <a class="text--big" href="#">local</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <header class="hero">
+        <div class="container">
+            <h1 class="hero__title title--extrabig">Venha para a festa!</h1>
+            <p class="hero__text text--big">Vamos celebrar o aniversário desse cotoco, <br>você não pode deixar de vir!</p>
+            <h1 class="hero__data text--big">Data: 17/08/2024</h1>
+            <div class="hero__contador">
+                <h1 class="hero__contador__text text--big-dark">Contagem regressiva para o evento:</h1><span id="contador"></span>
+            </div>
+            <div class="ingresso">
+                <button class="ingresso__button">Garanta já o seu ingresso!</button>
+            </div>
+        </div>
+    </header>
+    <section class="sobre">
+        <div class="container">
+            <h1 class="sobre__text title--big">Conheça mais sobre o aniversáriante!</h1>
+            <div class="sobre__imagens__container">
+                <a href="#">
+                    <img class="sobre__img" src="../src/images/gihubLogo.png" alt="Logo da Github">
+                </a>
+                <a href="#">
+                    <img class="sobre__img" src="../src/images/linkedinLogo.png" alt="Logo da Linkedin">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script src="../dist/scripts/main.js"></script>
 </body>
 </html>
